@@ -3,7 +3,7 @@ objectClass: olcSchemaConfig
 cn: kolab2
 olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.1 NAME ( 'k' 'kolab' ) DESC 'Kolab attribute' SUP name )
 olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.2 NAME 'kolabDeleteflag' DESC 'Per host deletion status' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
-olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.3 NAME 'alias' DESC 'RFC1274: RFC822 Mailbox' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+#olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.3 NAME 'alias' DESC 'RFC1274: RFC822 Mailbox' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
 olcAttributeTypes: ( 1.3.6.1.4.1.19419.2.1.4 NAME 'kolabEncryptedPassword' DESC 'base64 encoded public key encrypted Password' SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
 olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.5 NAME ( 'fqhostname' 'fqdnhostname' ) DESC 'Fully qualified Hostname including full domain component' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
 olcAttributeTypes: ( 1.3.6.1.4.1.19414.2.1.6 NAME 'kolabHost' DESC 'Multivalued -- list of hostnames in a Kolab setup' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
