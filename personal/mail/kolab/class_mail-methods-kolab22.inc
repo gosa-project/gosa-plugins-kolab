@@ -86,7 +86,7 @@ class mailMethodKolab22 extends mailMethodKolab
       for($i=0; $i <$attrs['postfix-mydestination']['count']; $i ++ ){
         $domains[] = $attrs['postfix-mydestination'][$i];
       }
-      @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>Found: ".trim(implode($domains,", "),", ")."</b>",
+      @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>Found: ".trim(implode(", ", $domains),", ")."</b>",
           "Revceiving 'Mail domains for kolab22'.");
     }elseif($ldap->count() == 0){
       @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>No domains found. Check k=kolab and postfix-mydestination</b>",
