@@ -284,7 +284,7 @@ class mailMethodKolab extends mailMethodCyrus
       for($i=0; $i <$attrs['kolabHost']['count']; $i ++ ){
         $host[] = $attrs['kolabHost'][$i];
       }
-      @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>Found: ".trim(implode($host,", "),", ")."</b>",
+      @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>Found: ".trim(implode(", ", $host),", ")."</b>",
           "Revceiving 'Mail hosts for kolab22'.");
     }elseif($ldap->count() == 0){
       @DEBUG (DEBUG_MAIL, __LINE__, __FUNCTION__, __FILE__, "<b>No mailHost entries found. Check k=kolab and mailHost</b>",
